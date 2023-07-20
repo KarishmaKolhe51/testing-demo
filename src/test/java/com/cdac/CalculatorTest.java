@@ -1,6 +1,6 @@
 package com.cdac;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
@@ -13,8 +13,11 @@ public class CalculatorTest
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void testAdd()
     {
-        assertTrue( true );
+        Calculator c = new Calculator();
+        int actualValue = c.add(10, 20);
+        int expectedValue = 30;
+        assertEquals(expectedValue, actualValue);
     }
 }
