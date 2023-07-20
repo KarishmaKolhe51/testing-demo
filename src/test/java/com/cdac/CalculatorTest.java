@@ -20,4 +20,14 @@ public class CalculatorTest
         int expectedValue = 30;
         assertEquals(expectedValue, actualValue);
     }
+
+    @Test
+    public void testSub()
+    {
+        Calculator c = new Calculator();
+        int actualValue = c.sub(10, 20);
+        int expectedValue = -10;
+        assertEquals(expectedValue, actualValue);
+    }
 }
+
